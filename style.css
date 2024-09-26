@@ -1,0 +1,151 @@
+/* Estilos Generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 10px;
+}
+
+section {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.producto {
+  margin-bottom: 20px;
+}
+
+.producto img {
+  width: 150px;
+  height: auto;
+}
+
+.producto button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.producto button:hover {
+  background-color: #45a049;
+}
+
+/* Carrito de compras */
+#carrito {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#carrito h2 {
+  text-align: center;
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-carrito li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#lista-carrito li button {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#lista-carrito li button:hover {
+  background: #ff1a1a;
+}
+
+#total {
+  font-weight: bold;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#vaciar-carrito {
+  display: block;
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+#vaciar-carrito:hover {
+  background: #ff1a1a;
+}
+
+/* Formulario de Suscripción */
+#suscripcion {
+  text-align: center;
+}
+
+#suscripcion form {
+  display: inline-block;
+  text-align: left;
+}
+
+#suscripcion input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+#suscripcion button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#suscripcion button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  margin-top: 20px;
+}
