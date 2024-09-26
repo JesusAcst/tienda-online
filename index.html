@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Bienvenidos a nuestra Tienda</h1>
+    </header>
+
+    <!-- Productos -->
+    <section id="productos">
+        <h2>Nuestra Selección de Productos</h2>
+        <div class="producto">
+            <h3>Accesorio 1</h3>
+            <img src="img/accesorio1.jpg" alt="Accesorio 1">
+            <p>Descripción del accesorio 1.</p>
+            <p>Precio: $10.00</p>
+            <button class="btn-agregar-carrito" data-nombre="Accesorio 1" data-precio="10">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h3>Accesorio 2</h3>
+            <img src="img/accesorio2.jpg" alt="Accesorio 2">
+            <p>Descripción del accesorio 2.</p>
+            <p>Precio: $15.00</p>
+            <button class="btn-agregar-carrito" data-nombre="Accesorio 2" data-precio="15">Agregar al carrito</button>
+        </div>
+        <!-- Repite para otros productos -->
+    </section>
+
+    <!-- Carrito de compras -->
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+    </section>
+
+    <!-- Formulario de Suscripción -->
+    <section id="suscripcion">
+        <h2>Suscríbete a nuestras novedades</h2>
+        <form action="#" method="POST">
+            <label for="email-suscripcion">Correo Electrónico:</label>
+            <input type="email" id="email-suscripcion" name="email" required>
+            <button type="submit">Suscribirse</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Productos</p>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
