@@ -1,0 +1,225 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif; /* Tipo de fuente */
+  line-height: 1.6; /* Altura de línea */
+  margin: 0; /* Margen del body */
+  padding: 0; /* Relleno del body */
+  background-color: #f4f4f4; /* Color de fondo */
+  color: #333; /* Color del texto */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffd000;
+    padding: 10px 20px;
+  }
+
+  header h1 {
+    margin: 0; /* Sin margen */
+}
+
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0%;
+  }
+  
+
+  nav ul li {
+    display: inline; /* Mostrar en línea */
+    margin: 0 15px; /* Espaciado entre elementos */
+}
+
+nav ul li a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #007bff;
+  }
+  
+
+
+  main {
+    padding: 20px;
+  }
+
+
+  .productos-categoria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .producto {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px; /* Ajusta el ancho según necesites */
+    text-align: center;
+
+    flex: 1 1 30%; /* Ajustar ancho */
+    margin: 10px; /* Margen */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Relleno */
+    background: #f9f9f9; /* Color de fondo */
+  }
+  
+  .producto img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+  }
+  
+
+
+
+
+  #contacto {
+    margin-top: 40px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos del formulario */
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+/* Formulario */
+form {
+  display: flex; /* Flexbox para el formulario */
+  flex-direction: column; /* Columna */
+}
+
+/* Botón de formulario */
+button {
+  cursor: pointer; /* Cursor de mano */
+  transition: background 0.3s; /* Transición suave */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 15px; /* Relleno */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+}
+  
+  button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+  }
+  
+
+
+  #suscripcion {
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  #suscripcion h2 {
+    margin-bottom: 15px;
+  }
+  
+  #suscripcion form div {
+    margin-bottom: 10px;
+  }
+  
+  #suscripcion input {
+    width: 100%; /* Ajustar al tamaño del contenedor */
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  #suscripcion button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #suscripcion button:hover {
+    background-color: #4cae4c; /* Cambiar el color al pasar el ratón */
+  }
+  
+
+
+
+
+  footer {
+    background: #007bff; /* Color de fondo del pie */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto */
+    padding: 10px 0; /* Relleno */
+  }
+  
+  .redes-sociales {
+    margin: 10px 0;
+  }
+  
+  .redes-sociales a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .redes-sociales a:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar el ratón */
+  }
+  
+
+  /* Responsividad - AREGLAR*/
+  @media (max-width: 768px) {
+    .producto {
+        flex: 1 1 45%; /* 2 productos por fila en pantallas pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .producto {
+        flex: 1 1 100%; /* 1 producto por fila en pant*/
+    }
+  }
