@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imagenes/tienda.png">
+    <link rel="icon" href="imagenes/bolsa-de-compra.png">
     <title>Tienda Online</title>
 </head>
 <body>
@@ -12,14 +12,13 @@
         <div class="logo">
             <img src="imagenes/bolsa-de-compra.png" alt="Logo de la pagina">
         </div>
-        <h1>Lista de Productos</h1>
+        <h1>FeSport Yisus</h1>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#suscripcion">Suscripción</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="suscripcion.html">Suscripción</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -27,71 +26,62 @@
     <main>
         <section id="productos">
           <h2>Nuestra Selección de Productos</h2>
-          
-          <!-- Categoría: Accesorios -->
           <h3>Accesorios</h3>
-          <div class="productos-categoria">
+            <div class="productos-categoria">
+              <div class="producto">
+                <img src="imagenes/anillo.jpg" alt="anillo de mujer">
+                <h4>Anillo de Oro</h4>
+                <p>Elegante anillo de oro de 18 quilates, ideal para compromisos o celebraciones especiales.</p>
+                <span>Precio: $1.200.000</span>
+                <button>Comprar</button>
+              </div>
             <div class="producto">
-              <img src="img/accesorio1.jpg" alt="Descripción del accesorio 1">
-              <h4>Accesorio 1</h4>
-              <p>Descripción breve del accesorio 1.</p>
-              <span>Precio: $10.00</span>
+              <img src="imagenes/aretes.jpeg" alt="aretes de mujer">
+              <h4>Aretes de Oro</h4>
+              <p>Finos aretes de oro de 18 quilates, con diseño clásico y sofisticado. Un regalo perfecto para ocasiones importantes.</p>
+              <span>Precio: $800.000</span>
               <button>Comprar</button>
             </div>
-            <div class="producto">
-              <img src="img/accesorio2.jpg" alt="Descripción del accesorio 2">
-              <h4>Accesorio 2</h4>
-              <p>Descripción breve del accesorio 2.</p>
-              <span>Precio: $15.00</span>
-              <button>Comprar</button>
-            </div>
-            <!-- Agrega más productos de accesorios aquí -->
           </div>
       
-          <!-- Categoría: Ropa Deportiva -->
           <h3>Ropa Deportiva</h3>
           <div class="productos-categoria">
             <div class="producto">
-              <img src="img/ropa1.jpg" alt="Descripción de la ropa deportiva 1">
-              <h4>Ropa Deportiva 1</h4>
-              <p>Descripción breve de la ropa deportiva 1.</p>
-              <span>Precio: $25.00</span>
+              <img src="imagenes/deportiva hombre.webp" alt="camiseta hombre">
+              <h4>Camisa Deportiva de Hombre</h4>
+              <p>Camisa ligera y transpirable, perfecta para entrenamientos o actividades al aire libre. Diseño moderno con tecnología de secado rápido.</p>
+              <span>Precio: $80,000</span>
               <button>Comprar</button>
             </div>
             <div class="producto">
-              <img src="img/ropa2.jpg" alt="Descripción de la ropa deportiva 2">
-              <h4>Ropa Deportiva 2</h4>
-              <p>Descripción breve de la ropa deportiva 2.</p>
-              <span>Precio: $30.00</span>
+              <img src="imagenes/ropa dama.webp" alt="conjunto deportivo para mujer">
+              <h4>Conjunto Deportivo para Dama</h4>
+              <p>Conjunto deportivo de dos piezas, ideal para yoga, running o gimnasio. Fabricado con tela elástica y transpirable que se ajusta cómodamente al cuerpo.</p>
+              <span>Precio: $150.000</span>
               <button>Comprar</button>
             </div>
-            <!-- Agrega más productos de ropa deportiva aquí -->
           </div>
       
-          <!-- Categoría: Detalles -->
           <h3>Detalles</h3>
           <div class="productos-categoria">
             <div class="producto">
-              <img src="img/detalle1.jpg" alt="Descripción del detalle 1">
-              <h4>Detalle 1</h4>
-              <p>Descripción breve del detalle 1.</p>
-              <span>Precio: $5.00</span>
+              <img src="imagenes/ancheta.jpg" alt="ancheta de regalo">
+              <h4>Ancheta</h4>
+              <p> Ancheta variada con chocolates, galletas, y productos gourmet. Ideal para regalos en ocasiones especiales.</p>
+              <span>Precio: $100.000</span>
               <button>Comprar</button>
             </div>
             <div class="producto">
-              <img src="img/detalle2.jpg" alt="Descripción del detalle 2">
-              <h4>Detalle 2</h4>
-              <p>Descripción breve del detalle 2.</p>
-              <span>Precio: $8.00</span>
+              <img src="imagenes/flores.jpg" alt="Descripción del detalle 2">
+              <h4>Arreglo de Flores</h4>
+              <p>Arreglo floral de rosas frescas y follaje. Perfecto para cumpleaños, aniversarios o cualquier ocasión especial.</p>
+              <span>Precio: $120.000</span>
               <button>Comprar</button>
             </div>
-            <!-- Agrega más productos de detalles aquí -->
           </div>
         </section>
         
 
-
-                <!-- Carrito de compras -->
         <section id="carrito">
           <h2>Carrito de Compras</h2>
           <ul id="lista-carrito"></ul>
@@ -100,61 +90,6 @@
         </section>
 
 
-        <section id="galeria">
-            <h2>Galería de Productos</h2>
-            
-            <div class="galeria-imagenes">
-              <h3>Imágenes</h3>
-              <img src="img/producto1.jpg" alt="Descripción del producto 1">
-              <img src="img/producto2.jpg" alt="Descripción del producto 2">
-              <img src="img/producto3.jpg" alt="Descripción del producto 3">
-            </div>
-          
-            <div class="galeria-videos">
-              <h3>Videos</h3>
-              <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" frameborder="0" allowfullscreen></iframe>
-              <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </section>
-
-
-
-        
-        
-          <section id="suscripcion">
-            <h2>Suscríbete a nuestro Boletín</h2>
-            <form action="#" method="post">
-              <div>
-                <label for="email-suscripcion">Correo Electrónico:</label>
-                <input type="email" id="email-suscripcion" name="email-suscripcion" required>
-              </div>
-              <button type="submit">Suscribirse</button>
-            </form>
-          </section>
-          
-          
-
-
-
-        <!-- SECCION DE CONTACTO -->
-        <section id="contacto">
-            <h2>Contáctanos</h2>
-            <form action="#" method="post">
-              <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-              </div>
-              <div>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-              <div>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-              </div>
-              <button type="submit">Enviar</button>
-            </form>
-          </section>
 
       </main>
 
@@ -169,7 +104,6 @@
             <p>Contacto: info@tuempresa.com</p>
           </div>
       </footer>
-      
       
       <script src="js/script.js"></script>
 </body>
